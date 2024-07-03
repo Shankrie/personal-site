@@ -8,7 +8,11 @@ export const CodeList = () => {
 
   return (
     <List>
-      <ListItem>{t("personalSite")}</ListItem>
+      <ListItem>
+        <Link href="https://github.com/Shankrie/personal-site" target="_blank">
+          {t("personalSite")}
+        </Link>
+      </ListItem>
       <ListItem>
         <Link href="https://github.com/chakra-ui/zag/pull/881" target="_blank">
           {t("bugInChakra")}
