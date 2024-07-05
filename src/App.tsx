@@ -9,9 +9,11 @@ import { CodeList } from "@components/CodeList/CodeList";
 import { ArticleList } from "@components/ArticleList/ArticleList";
 import { sprinkles } from "style/sprinkles.css";
 import { useTranslation } from "react-i18next";
+import { useHashScroll } from "hooks/useHashScroll";
 
 export const App = () => {
   const { t } = useTranslation();
+  useHashScroll();
 
   return (
     <MainLayout>
