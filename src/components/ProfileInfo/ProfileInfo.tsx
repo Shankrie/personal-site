@@ -9,6 +9,8 @@ import {
 import { PinIcon } from "@icons/PinIcon/PinIcon";
 import { vars } from "@style/theme.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "@components/Link/Link";
+import { MailIcon } from "@icons/MailIcon/MailIcon";
 
 export const ProfileInfo = () => {
   const { t } = useTranslation();
@@ -22,9 +24,16 @@ export const ProfileInfo = () => {
       <div className={infoContainerCss}>
         <h1>Henrikas Jasiūnas</h1>
         <h2>Frontend Engineer</h2>
-        <div className={locationCss}>
-          <PinIcon fill={vars.color.text} size={16} />
-          Vilnius, Lithuania
+        <div>
+          <Link href="mailto:henrikas@outlook.com">
+            <div className={locationCss}>
+              <MailIcon fill={vars.color.text} size={16} /> henrikas@outlook.com
+            </div>
+          </Link>
+          <div className={locationCss}>
+            <PinIcon fill={vars.color.text} size={16} />
+            Vilnius, Lithuania
+          </div>
         </div>
       </div>
     </div>

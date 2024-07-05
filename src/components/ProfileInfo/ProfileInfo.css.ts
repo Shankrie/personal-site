@@ -44,5 +44,5 @@ export const infoContainerCss = style({
 export const locationCss = style({
   display: "flex",
   alignItems: "center",
-  gap: "4px",
+  gap: "6px",
 });
