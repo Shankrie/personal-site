@@ -10,6 +10,7 @@ import { ArticleList } from "@components/ArticleList/ArticleList";
 import { sprinkles } from "style/sprinkles.css";
 import { useTranslation } from "react-i18next";
 import { useHashScroll } from "hooks/useHashScroll";
+import { ProjectList } from "@components/ProjectList/ProjectList";
 
 export const App = () => {
   const { t } = useTranslation();
@@ -42,6 +43,10 @@ export const App = () => {
           <Section>
             <SectionTitle id="education" title={t("education")} />
             <Education />
+          </Section>
+          <Section>
+            <SectionTitle id="projects" title={t("liveProjects")} />
+            <ProjectList />
           </Section>
           <Section>
             <SectionTitle id="code" title={t("codeExamples")} />
